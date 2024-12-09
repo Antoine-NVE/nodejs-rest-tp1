@@ -91,9 +91,6 @@ app.delete('/parkings/:id/reservations/:id2', (req, res) => {
     if (!parking) {
         res.status(404).send('Parking not found');
     }
-    if (parking.reservations.length === 0) {
-        res.status(404).send('No reservations');
-    }
     if (!parking.reservations.includes(parseInt(req.params.id2))) {
         res.status(404).send('Reservation not found');
     }
@@ -105,15 +102,16 @@ app.delete('/parkings/:id/reservations/:id2', (req, res) => {
         1
     );
 
+    if (parking.reservations.length === 0) {
+        res.status(200).send('Reservation deleted, no other reservations');
+    }
+
     // On renvoie les réservations du parking
     const parkingReservations = [];
     parking.reservations.forEach((reservationId) => {
         const reservation = reservations.find((reservation) => reservation.id === reservationId);
         parkingReservations.push(reservation);
     });
-    if (parkingReservations.length === 0) {
-        res.status(404).send('No reservations');
-    }
     res.status(200).json(parkingReservations);
 });
 
