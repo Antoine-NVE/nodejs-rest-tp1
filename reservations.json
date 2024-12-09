@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "clientName": "Bob Marley",
+        "vehicle": "car",
+        "licensePlate": "ED432EF",
+        "checkin": "2024-08-21T06:00:00Z",
+        "checkout": "2024-08-27T06:00:00Z"
+    },
+    {
+        "id": 2,
+        "clientName": "Stevie Wonder",
+        "vehicle": "car",
+        "licensePlate": "AB213CD",
+        "checkin": "2024-08-20T06:00:00Z",
+        "checkout": "2024-08-27T06:00:00Z"
+    },
+    {
+        "id": 3,
+        "clientName": "Roger Federer",
+        "vehicle": "car",
+        "licensePlate": "EB123KJ",
+        "checkin": "2024-08-01T06:00:00Z",
+        "checkout": "2024-08-17T06:00:00Z"
+    },
+    {
+        "id": 4,
+        "clientName": "Sophie Marceau",
+        "vehicle": "car",
+        "licensePlate": "BD198DD",
+        "checkin": "2024-08-21T06:00:00Z",
+        "checkout": "2024-08-27T06:00:00Z"
+    },
+    {
+        "id": 5,
+        "clientName": "Miles Davis",
+        "vehicle": "car",
+        "licensePlate": "ED432EF",
+        "checkin": "2024-08-28T06:00:00Z",
+        "checkout": "2024-08-29T06:00:00Z"
+    },
+    {
+        "id": 6,
+        "clientName": "Charlie Parker",
+        "vehicle": "car",
+        "licensePlate": "KJ233OE",
+        "checkin": "2024-08-12T06:00:00Z",
+        "checkout": "2024-08-17T06:00:00Z"
+    }
+]
